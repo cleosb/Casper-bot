@@ -1,0 +1,129 @@
+{
+  "id": "1dd45afe-4578-48c2-aa2f-0388bd52f0e9",
+  "name": "Retornar-menu",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "payload": {
+                  "elements": [
+                    {
+                      "buttons": [
+                        {
+                          "type": "web_url",
+                          "title": "Clic aqui",
+                          "url": "https://g1.globo.com/pop-arte/"
+                        },
+                        {
+                          "title": "Novidades de hoje",
+                          "payload": "Novidades de hoje",
+                          "type": "postback"
+                        }
+                      ],
+                      "image_url": "https://st3.idealista.it/cms/archivie/styles/amp_1200x675_16_9/public/2018-10/media/image/italia.jpg?fv=yYgW4mmp&itok=ezPP9Slx",
+                      "subtitle": "Entretenimento. Noticias de hoje.",
+                      "title": "Entretenimento"
+                    },
+                    {
+                      "subtitle": "Esportes. Fique por dentro.",
+                      "title": "Esportes!",
+                      "image_url": "https://celsomaldaner.com.br/site/wp-content/uploads/2020/07/esporte.jpg",
+                      "buttons": [
+                        {
+                          "url": "https://esportes.r7.com/",
+                          "type": "web_url",
+                          "title": "Clic aqui!"
+                        },
+                        {
+                          "title": "Quero o melhor do esporte!",
+                          "type": "postback",
+                          "payload": "Quero o melhor do esporte!"
+                        }
+                      ]
+                    },
+                    {
+                      "buttons": [
+                        {
+                          "type": "web_url",
+                          "url": "http://ego.globo.com/",
+                          "title": "Clic aqui!"
+                        },
+                        {
+                          "title": "Quero Mais fofocas!",
+                          "payload": "Quero Mais fofocas!",
+                          "type": "postback"
+                        }
+                      ],
+                      "title": "Famosos!",
+                      "subtitle": "Saber mais sobre astros e estrelas.",
+                      "image_url": "https://academiadosimportadores.com/wp-content/uploads/2018/02/Importar-Instrumentos-Musicais-dos-Eua-2.jpg"
+                    }
+                  ],
+                  "template_type": "generic"
+                },
+                "type": "template"
+              }
+            }
+          }
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "O que quer  ver?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Retornar",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " menu",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "ed1ec21e-e05e-4ebf-be80-77b0b25e1597",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

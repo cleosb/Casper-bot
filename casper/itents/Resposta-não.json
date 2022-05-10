@@ -1,0 +1,69 @@
+{
+  "id": "f3a89742-d690-40d9-940b-297c2dc38c59",
+  "name": "Resposta-não",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Obrigado! Quando precisar é só me chamar. Até logo."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "nao",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "04fc54ea-0e39-47fd-b42a-c597cb553792",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 1,
+      "id": "e16556e9-d8b7-4135-9dd1-cd09d33dd304",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

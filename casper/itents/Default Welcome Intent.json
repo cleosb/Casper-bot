@@ -1,0 +1,259 @@
+{
+  "id": "ba5a27fa-ce85-4566-bd3c-15caee53778f",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "quick_reply",
+          "platform": "facebook",
+          "condition": "",
+          "title": "Vamos para as notícias de hoje?",
+          "replies": [
+            "Sim",
+            "Não"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "type": "template",
+                "payload": {
+                  "template_type": "generic",
+                  "elements": [
+                    {
+                      "image_url": "https://st3.idealista.it/cms/archivie/styles/amp_1200x675_16_9/public/2018-10/media/image/italia.jpg?fv=yYgW4mmp&itok=ezPP9Slx",
+                      "title": "Entretenimento",
+                      "subtitle": "Entretenimento.Noticias de hoje.",
+                      "buttons": [
+                        {
+                          "title": "Clique aqui",
+                          "url": "https://g1.globo.com/pop-arte/",
+                          "type": "web_url"
+                        },
+                        {
+                          "payload": "Novidades de hoje",
+                          "title": "Novidades de hoje",
+                          "type": "postback"
+                        }
+                      ]
+                    },
+                    {
+                      "image_url": "https://leiemcampo.com.br/wp-content/uploads/2019/01/Fonte-Gremio-Na%CC%81utico-Unia%CC%83o.jpg",
+                      "subtitle": "Esportes. Fique por dentro.",
+                      "buttons": [
+                        {
+                          "title": "Clique aqui!",
+                          "type": "web_url",
+                          "url": "https://esportes.r7.com/"
+                        },
+                        {
+                          "title": "Quero o melhor do esporte!",
+                          "payload": "Quero o melhor do esporte!",
+                          "type": "postback"
+                        }
+                      ],
+                      "title": "Esportes!"
+                    },
+                    {
+                      "buttons": [
+                        {
+                          "url": "http://ego.globo.com/",
+                          "type": "web_url",
+                          "title": "Clique aqui!"
+                        },
+                        {
+                          "payload": "Quero Mais fofocas!",
+                          "title": "Quero Mais fofocas!",
+                          "type": "postback"
+                        }
+                      ],
+                      "subtitle": "Saber mais sobre astros e estrelas.",
+                      "image_url": "https://academiadosimportadores.com/wp-content/uploads/2018/02/Importar-Instrumentos-Musicais-dos-Eua-2.jpg",
+                      "title": "Famosos!"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Olá, sou o Casper, estou aqui pra te ajudar, você quer saber alguma notícia ??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "003e5524-3ef5-4dc1-9d9c-5e634a818537",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "olá",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "a9a41bb1-e096-476e-9c09-f70aa6d65ad1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Começar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e94259ca-6179-48e3-860a-d87eb8697267",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quero ver notícias",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "ac9487e4-9d04-44e1-9851-3cdaecc29680",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Notícias de hoje",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "eb93d410-5e7b-4040-988d-d8295ad9c4f3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oi mande notícias",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fd22627f-7368-4425-9bc4-ce827c48fa72",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quero menu de notícias",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "73de0d02-d7e7-430b-89b4-747afbb99f18",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ler notícias",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "24236cb8-d78a-4438-a25b-d1b3cf75dcf9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oi tudo bem",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7ccd044a-37d2-4630-8f75-7f8834195dfb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "notícias",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fe24298e-c4de-4620-9386-25b2747406ba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "eae",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0474fa81-94c8-46d3-9daa-2b4a93107d64",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

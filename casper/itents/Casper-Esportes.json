@@ -1,0 +1,123 @@
+{
+  "id": "4f8ba58a-9761-4add-ad9e-5c49f6c7ee5f",
+  "name": "Casper-Esportes",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "type": "template",
+                "payload": {
+                  "elements": [
+                    {
+                      "subtitle": "Esporte e saúde. Veja mais.",
+                      "title": "Sedentarismo",
+                      "image_url": "https://www.cervejariaguitts.com.br/wp-content/uploads/2020/06/historia-dos-clubes-de-futebol-2.jpg",
+                      "buttons": [
+                        {
+                          "url": "https://br.flashsport.com/?gclid=Cj0KCQjwmuiTBhDoARIsAPiv6L9XU6oXaI8F6Y-727aFyraxaipnLA0whabpmGmX_7-k7oMAO9WJAJ8aAoL-EALw_wcB",
+                          "type": "web_url",
+                          "title": "Clique aqui"
+                        },
+                        {
+                          "type": "postback",
+                          "title": "Fique ligado",
+                          "payload": "Fique ligado"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Esportes!",
+                      "subtitle": "Esportes. Fique atualizado.",
+                      "buttons": [
+                        {
+                          "type": "web_url",
+                          "title": "Clique aqui!",
+                          "url": "https://esportes.r7.com/"
+                        },
+                        {
+                          "type": "postback",
+                          "payload": "Noticias do esporte!",
+                          "title": "Noticias do esporte!"
+                        }
+                      ],
+                      "image_url": "https://leiemcampo.com.br/wp-content/uploads/2019/01/Fonte-Gremio-Na%CC%81utico-Unia%CC%83o.jpg"
+                    },
+                    {
+                      "image_url": "https://st2.depositphotos.com/3334457/6707/i/600/depositphotos_67070409-stock-photo-soccer-player-in-action.jpg",
+                      "title": "Campionatos!",
+                      "subtitle": "Saber quem joga .",
+                      "buttons": [
+                        {
+                          "type": "web_url",
+                          "url": "https://esportes.r7.com/",
+                          "title": "Clique aqui!"
+                        },
+                        {
+                          "payload": " Quero Jogos de hoje!",
+                          "type": "postback",
+                          "title": "Quero jogos de hoje!"
+                        }
+                      ]
+                    }
+                  ],
+                  "template_type": "generic"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Escolha sua notícias ou digite \" Retornar menu\""
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Noticias do esporte",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "190be442-b705-4e4b-8c94-76cbc1d3aec2",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

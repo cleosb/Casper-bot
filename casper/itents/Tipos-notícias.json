@@ -1,0 +1,146 @@
+{
+  "id": "50f7f3d2-59a5-45f6-84bc-8b5395eb35d8",
+  "name": "Tipos-notícias",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        },
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "quick_replies": [
+                {
+                  "title": "Esportes",
+                  "payload": "postback_esporte",
+                  "content_type": "text"
+                },
+                {
+                  "content_type": "text",
+                  "payload": "postback_famosos",
+                  "title": "Famosos"
+                },
+                {
+                  "payload": "postback_entretenimento",
+                  "title": "Entretenimento",
+                  "content_type": "text"
+                }
+              ],
+              "text": "Qual tipo de notícias que você quer saber"
+            }
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Oi",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 2,
+      "id": "b9bd80d5-b5fb-43a3-a5f8-e8fc671558da",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "me informe",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ce83964d-8e93-41f6-9421-aab979ad4c97",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Olá",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "a804faff-3b33-4c8d-9884-01344d851d17",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "970bda1d-3929-4a7a-b13a-5859ffb27897",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quero saber",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d1441591-dc36-4fc3-b9c6-b6a6a16a00e0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "gostaria de saber",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "001cd377-f7d3-49e6-874d-3593363df60c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

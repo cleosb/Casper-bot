@@ -1,0 +1,123 @@
+{
+  "id": "0688207b-6423-49a1-bd73-520eab9c1080",
+  "name": "Casper-Famosos",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "type": "template",
+                "payload": {
+                  "template_type": "generic",
+                  "elements": [
+                    {
+                      "title": "Famosos",
+                      "image_url": "https://st3.idealista.it/cms/archivie/styles/amp_1200x675_16_9/public/2018-10/media/image/italia.jpg?fv=yYgW4mmp&itok=ezPP9Slx",
+                      "subtitle": "Famosos. Mais informaçoes.",
+                      "buttons": [
+                        {
+                          "url": "https://g1.globo.com/pop-arte/",
+                          "title": "Clique aqui",
+                          "type": "web_url"
+                        },
+                        {
+                          "title": "Quero mais fofocas",
+                          "type": "postback",
+                          "payload": "Quero mais fofocas"
+                        }
+                      ]
+                    },
+                    {
+                      "subtitle": "Famosos. Fique atualizado.",
+                      "buttons": [
+                        {
+                          "type": "web_url",
+                          "title": "Clique aqui!",
+                          "url": "https://esportes.r7.com/"
+                        },
+                        {
+                          "payload": "Novidades dos famosos!",
+                          "type": "postback",
+                          "title": "Novidades dos famosos!"
+                        }
+                      ],
+                      "image_url": "http://tendencee.com.br/wp-content/uploads/2019/03/Artista-Transforma-Estranhos-E-Personagens-Famosos-Em-Desenhos-Animados-33-Novas-Imagens-_MRNUFCqn.jpg",
+                      "title": "As mais vista!"
+                    },
+                    {
+                      "subtitle": "Saber mais sobre astros e estrelas.",
+                      "image_url": "http://1.bp.blogspot.com/-4JdlAXT7RS4/T3UxV9BigEI/AAAAAAAAByM/sbflScQkTg0/s1600/Quadros%2Bde%2BPintores%2BFamosos.jpgg",
+                      "buttons": [
+                        {
+                          "url": "http://ego.globo.com/",
+                          "type": "web_url",
+                          "title": "Clique aqui!"
+                        },
+                        {
+                          "type": "postback",
+                          "payload": "Saber Mais fofocas!",
+                          "title": "Saber Mais fofocas!"
+                        }
+                      ],
+                      "title": "Famosos!"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Escolha sua notícia ou digite \"Retornar menu\""
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quero mais fofocas!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "66e9bed4-10a9-4961-9766-05df6a4eb7d6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

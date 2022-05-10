@@ -1,0 +1,71 @@
+{
+  "id": "5d204ed7-7c26-4e4a-ab6d-2b0558d13b74",
+  "name": "Encerra-conversa",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "type": "Image",
+                "payload": {
+                  "is_reusable": true,
+                  "url": "https://img.myloview.com.br/posters/tchau-400-17403073.jpg"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Até logo! E se  precisar é so me chamar!!"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Encerrar conversa",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d9f29884-c0fd-40f1-9aaf-93a1da6315aa",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

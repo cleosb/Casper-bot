@@ -1,0 +1,137 @@
+{
+  "id": "ad9a691b-d7a9-4718-a200-09c2974ee00d",
+  "name": "Resposta-sim",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "payload": {
+                  "elements": [
+                    {
+                      "subtitle": "Entretenimento.Noticias de hoje.",
+                      "buttons": [
+                        {
+                          "url": "https://g1.globo.com/pop-arte/",
+                          "type": "web_url",
+                          "title": "Clique aqui"
+                        },
+                        {
+                          "payload": "Novidades de hoje",
+                          "title": "Novidades de hoje",
+                          "type": "postback"
+                        }
+                      ],
+                      "image_url": "https://st3.idealista.it/cms/archivie/styles/amp_1200x675_16_9/public/2018-10/media/image/italia.jpg?fv=yYgW4mmp&itok=ezPP9Slx",
+                      "title": "Entretenimento"
+                    },
+                    {
+                      "image_url": "https://leiemcampo.com.br/wp-content/uploads/2019/01/Fonte-Gremio-Na%CC%81utico-Unia%CC%83o.jpg",
+                      "buttons": [
+                        {
+                          "url": "https://esportes.r7.com/",
+                          "type": "web_url",
+                          "title": "Clique aqui!"
+                        },
+                        {
+                          "title": "Quero o melhor do esporte!",
+                          "payload": "Quero o melhor do esporte!",
+                          "type": "postback"
+                        }
+                      ],
+                      "subtitle": "Esportes. Fique por dentro.",
+                      "title": "Esportes!"
+                    },
+                    {
+                      "title": "Famosos!",
+                      "buttons": [
+                        {
+                          "title": "Clique aqui!",
+                          "type": "web_url",
+                          "url": "http://ego.globo.com/"
+                        },
+                        {
+                          "payload": "Quero Mais fofocas!",
+                          "type": "postback",
+                          "title": "Quero Mais fofocas!"
+                        }
+                      ],
+                      "image_url": "https://academiadosimportadores.com/wp-content/uploads/2018/02/Importar-Instrumentos-Musicais-dos-Eua-2.jpg",
+                      "subtitle": "Saber mais sobre astros e estrelas."
+                    }
+                  ],
+                  "template_type": "generic"
+                },
+                "type": "template"
+              }
+            }
+          }
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Que notícias você deseja saber?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "sim!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6c22cda8-e6da-40d9-93d1-26a4a49fb4b9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 2,
+      "id": "a0955432-af91-43b2-bc34-3b6d08ff96e5",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

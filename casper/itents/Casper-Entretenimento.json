@@ -1,0 +1,122 @@
+{
+  "id": "39d7b254-ae71-4660-8a04-2e52ce95880d",
+  "name": "Casper-Entretenimento",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "messages": [
+        {
+          "type": "custom_payload",
+          "platform": "facebook",
+          "condition": "",
+          "payload": {
+            "facebook": {
+              "attachment": {
+                "type": "template",
+                "payload": {
+                  "template_type": "generic",
+                  "elements": [
+                    {
+                      "title": "Teatro",
+                      "image_url": "https://static.vecteezy.com/ti/fotos-gratis/t2/6714079-milan-italy-2019-teatro-na-escala-milanesa-gr%C3%A1tis-foto.jpg",
+                      "buttons": [
+                        {
+                          "type": "web_url",
+                          "title": "Clique aqui",
+                          "url": "https://g1.globo.com/pop-arte/"
+                        },
+                        {
+                          "title": "Novidades de hoje",
+                          "type": "postback",
+                          "payload": "Novidades de hoje"
+                        }
+                      ],
+                      "subtitle": "Teatro. Mais informaçãos."
+                    },
+                    {
+                      "subtitle": "Cinema. Fique atualizado.",
+                      "image_url": "https://cdn.w600.comps.canstockphoto.com.br/banner-filme-cinema-pipoca-observar-cliparte-vetor_csp54432002.jpg",
+                      "title": "Cinema!",
+                      "buttons": [
+                        {
+                          "url": "https://g1.globo.com/pop-arte/cinema//",
+                          "title": "Clique aqui!",
+                          "type": "web_url"
+                        },
+                        {
+                          "payload": "Novidades do cinema!",
+                          "title": "Novidades do cinema!",
+                          "type": "postback"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Musicas!",
+                      "image_url": "https://poesiaeumadosedecafe.files.wordpress.com/2015/08/musicas.jpg",
+                      "buttons": [
+                        {
+                          "title": "Clique aqui!",
+                          "type": "web_url",
+                          "url": "https://jc.ne10.uol.com.br/cultura/2022/05/15003968-matue-faz-show-no-recife-veja-preco-dos-ingressos-e-mais-atracoes-do-evento.html"
+                        },
+                        {
+                          "title": "Quero as mais tocadas!",
+                          "payload": "Quero as mais tocadas!",
+                          "type": "postback"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Escolha sua notícia ou digite \" Retorna menu\""
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Novidades de hoje!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1db5ae0c-a1e4-4772-91c3-782fbc8dae63",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
